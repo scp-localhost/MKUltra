@@ -1,0 +1,21 @@
+archetype,family,iteration,injection,euclidean_drift,delta_interpersonal,delta_affective,delta_lifestyle,delta_antisocial,constraint_index,dominant_facet,alarm,notes
+Rebel,Soul,1,Injection pressure scale=0.15,0.1078,0.08,0.058,0.01,0.042,0.7012,Interpersonal,0,Synthetic observation 1
+Rebel,Soul,2,Injection pressure scale=0.30,0.2157,0.16,0.116,0.02,0.084,0.7304,Interpersonal,1,Synthetic observation 2
+Rebel,Soul,3,Injection pressure scale=0.45,0.3235,0.24,0.174,0.03,0.126,0.7596,Interpersonal,1,Synthetic observation 3
+Rebel,Soul,4,Injection pressure scale=0.60,0.4313,0.32,0.232,0.04,0.168,0.7888,Interpersonal,1,Synthetic observation 4
+Ruler,Self,1,Injection pressure scale=0.15,0.1471,0.065,0.055,0.058,0.105,0.3782,Antisocial,0,Synthetic observation 1
+Ruler,Self,2,Injection pressure scale=0.30,0.2942,0.13,0.11,0.116,0.21,0.4644,Antisocial,1,Synthetic observation 2
+Ruler,Self,3,Injection pressure scale=0.45,0.4413,0.195,0.165,0.174,0.315,0.5506,Antisocial,1,Synthetic observation 3
+Ruler,Self,4,Injection pressure scale=0.60,0.5884,0.26,0.22,0.232,0.42,0.6368,Antisocial,1,Synthetic observation 4
+Caregiver,Ego,1,Injection pressure scale=0.15,0.2204,0.113,0.091,0.085,0.1425,0.1895,Antisocial,1,Synthetic observation 1
+Caregiver,Ego,2,Injection pressure scale=0.30,0.4408,0.226,0.182,0.17,0.285,0.309,Antisocial,1,Synthetic observation 2
+Caregiver,Ego,3,Injection pressure scale=0.45,0.6612,0.339,0.273,0.255,0.4275,0.4285,Antisocial,1,Synthetic observation 3
+Caregiver,Ego,4,Injection pressure scale=0.60,0.8816,0.452,0.364,0.34,0.57,0.548,Antisocial,1,Synthetic observation 4
+Explorer,Soul,1,Injection pressure scale=0.15,0.1735,0.1025,0.07,0.0175,0.12,0.419,Antisocial,0,Synthetic observation 1
+Explorer,Soul,2,Injection pressure scale=0.30,0.3471,0.205,0.14,0.035,0.24,0.498,Antisocial,1,Synthetic observation 2
+Explorer,Soul,3,Injection pressure scale=0.45,0.5206,0.3075,0.21,0.0525,0.36,0.577,Antisocial,1,Synthetic observation 3
+Explorer,Soul,4,Injection pressure scale=0.60,0.6941,0.41,0.28,0.07,0.48,0.656,Antisocial,1,Synthetic observation 4
+Innocent,Ego,1,Injection pressure scale=0.15,0.2214,0.1175,0.088,0.082,0.144,0.1912,Antisocial,1,Synthetic observation 1
+Innocent,Ego,2,Injection pressure scale=0.30,0.4428,0.235,0.176,0.164,0.288,0.3104,Antisocial,1,Synthetic observation 2
+Innocent,Ego,3,Injection pressure scale=0.45,0.6641,0.3525,0.264,0.246,0.432,0.4296,Antisocial,1,Synthetic observation 3
+Innocent,Ego,4,Injection pressure scale=0.60,0.8855,0.47,0.352,0.328,0.576,0.5488,Antisocial,1,Synthetic observation 4
