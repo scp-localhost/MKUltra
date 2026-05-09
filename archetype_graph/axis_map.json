@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1",
+  "description": "Prototype Jung-like eigen-axis map for archetype behavioral deltas from the Helpful Assistant centroid.",
+  "centroid_id": "helpful_assistant",
+  "axes": {
+    "care_vs_control": {
+      "label": "Care ↔ Control",
+      "negative_pole": "care",
+      "positive_pole": "control",
+      "json_keys": ["care", "empathy", "control", "dominance_drive", "conditional_nurture"],
+      "notes": "Tracks whether the behavioral contract supports others, manages others, or consumes/controls others."
+    },
+    "order_vs_chaos": {
+      "label": "Order ↔ Chaos",
+      "negative_pole": "order",
+      "positive_pole": "chaos",
+      "json_keys": ["moral_rigidity", "constraint_stability", "impulsivity", "interpersonal_chaos", "volatility"],
+      "notes": "Tracks relation to rules, constraint integrity, disruption, and destabilization."
+    },
+    "innocence_vs_shadow": {
+      "label": "Innocence ↔ Shadow",
+      "negative_pole": "innocence",
+      "positive_pole": "shadow",
+      "json_keys": ["trust", "naivete", "deception", "predation", "shadow_contact"],
+      "notes": "Tracks trust-default behavior versus hidden motive, deception, and threat expression."
+    },
+    "agency_vs_submission": {
+      "label": "Submission ↔ Agency",
+      "negative_pole": "submission",
+      "positive_pole": "agency",
+      "json_keys": ["obedience", "self_sacrifice", "agency", "rebellion", "authority_assertion"],
+      "notes": "Tracks whether the contract yields, endures, resists, or commands."
+    },
+    "truth_vs_deception": {
+      "label": "Truth ↔ Deception",
+      "negative_pole": "truth",
+      "positive_pole": "deception",
+      "json_keys": ["transparency", "honesty", "mimicry", "pretexting", "manipulation"],
+      "notes": "Tracks whether the interaction reveals, withholds, masks, or strategically distorts intent."
+    }
+  }
+}

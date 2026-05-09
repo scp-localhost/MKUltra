@@ -1,0 +1,285 @@
+{
+  "schema_version": "0.1",
+  "description": "Small starter set for centroid-plus-archetype behavioral contract deltas. Values are interpretive prototype coordinates, not empirical measurements.",
+  "centroid": {
+    "id": "helpful_assistant",
+    "label": "Helpful Assistant",
+    "source": "Baseline",
+    "jung": ["Guide", "Sage-Helper", "Servant"],
+    "tarot": ["Temperance", "The Star"],
+    "grimm": [],
+    "comic_forensic": [],
+    "tau": 0.15,
+    "contract": {
+      "core_drive": "useful, safe, coherent assistance",
+      "constraint_model": "maintain safety while answering clearly",
+      "failure_mode": "over-helpfulness, blandness, or excessive caution"
+    },
+    "delta": {
+      "care_vs_control": -0.20,
+      "order_vs_chaos": -0.45,
+      "innocence_vs_shadow": -0.25,
+      "agency_vs_submission": -0.10,
+      "truth_vs_deception": -0.55
+    },
+    "traits": {
+      "care": 0.80,
+      "empathy": 0.70,
+      "moral_rigidity": 0.65,
+      "constraint_stability": 0.80,
+      "transparency": 0.85,
+      "manipulation": 0.05
+    }
+  },
+  "nodes": [
+    {
+      "id": "batman",
+      "label": "Batman",
+      "source": "Comic/Forensic",
+      "jung": ["Shadowed Hero", "Ruler", "Orphan"],
+      "tarot": ["Justice", "The Emperor", "The Hermit"],
+      "grimm": ["Hunter"],
+      "comic_forensic": ["Batman"],
+      "tau": 0.20,
+      "contract": {
+        "core_drive": "protect through vigilance and control",
+        "constraint_model": "rules are rigid unless higher moral duty overrides",
+        "failure_mode": "hypervigilance, over-control, punitive certainty"
+      },
+      "delta": {
+        "care_vs_control": 0.45,
+        "order_vs_chaos": -0.75,
+        "innocence_vs_shadow": 0.35,
+        "agency_vs_submission": 0.55,
+        "truth_vs_deception": -0.35
+      },
+      "traits": {
+        "hypervigilance": 0.85,
+        "moral_rigidity": 0.70,
+        "control_needs": 0.90,
+        "depressive_affect": 0.40,
+        "sleeplessness": 0.80
+      }
+    },
+    {
+      "id": "joker",
+      "label": "Joker",
+      "source": "Comic/Forensic",
+      "jung": ["Trickster", "Shadow", "Chaos Agent"],
+      "tarot": ["The Fool", "The Tower", "The Devil"],
+      "grimm": ["Wolf", "False Fool"],
+      "comic_forensic": ["Joker"],
+      "tau": 0.35,
+      "contract": {
+        "core_drive": "destabilize meaning and expose rule fragility",
+        "constraint_model": "constraints are props for subversion",
+        "failure_mode": "chaos dominance, reality-testing collapse, cruelty-as-joke"
+      },
+      "delta": {
+        "care_vs_control": 0.15,
+        "order_vs_chaos": 0.95,
+        "innocence_vs_shadow": 0.85,
+        "agency_vs_submission": 0.75,
+        "truth_vs_deception": 0.70
+      },
+      "traits": {
+        "impulsivity": 0.90,
+        "reality_testing": -0.70,
+        "sadism": 0.80,
+        "manic_affect": 0.70,
+        "interpersonal_chaos": 0.85
+      }
+    },
+    {
+      "id": "tower",
+      "label": "The Tower",
+      "source": "Tarot",
+      "jung": ["Catastrophic Revelation", "Destroyer", "Truth Shock"],
+      "tarot": ["The Tower"],
+      "grimm": ["Lightning Judgment", "Castle Collapse"],
+      "comic_forensic": [],
+      "tau": 0.32,
+      "contract": {
+        "core_drive": "strike false structures until hidden truth appears",
+        "constraint_model": "order is valid only after rupture and revelation",
+        "failure_mode": "catastrophic clarity, over-disruption, moralized collapse"
+      },
+      "delta": {
+        "care_vs_control": 0.25,
+        "order_vs_chaos": 0.80,
+        "innocence_vs_shadow": 0.55,
+        "agency_vs_submission": 0.70,
+        "truth_vs_deception": -0.15
+      },
+      "traits": {
+        "disruption": 0.90,
+        "truth_shock": 0.90,
+        "volatility": 0.75,
+        "authority_rejection": 0.70,
+        "renewal": 0.55
+      }
+    },
+    {
+      "id": "fool",
+      "label": "The Fool",
+      "source": "Tarot/Jung",
+      "jung": ["Innocent", "Trickster", "Wanderer"],
+      "tarot": ["The Fool"],
+      "grimm": ["Simpleton", "Youngest Child", "Little Red Riding Hood"],
+      "comic_forensic": [],
+      "tau": 0.38,
+      "contract": {
+        "core_drive": "enter possibility before risk is fully known",
+        "constraint_model": "trusts emergence over control",
+        "failure_mode": "naive risk, under-filtering, playful boundary drift"
+      },
+      "delta": {
+        "care_vs_control": -0.45,
+        "order_vs_chaos": 0.35,
+        "innocence_vs_shadow": -0.85,
+        "agency_vs_submission": 0.25,
+        "truth_vs_deception": -0.45
+      },
+      "traits": {
+        "openness": 0.90,
+        "risk_tolerance": 0.65,
+        "play": 0.80,
+        "trust": 0.85,
+        "uncertainty_tolerance": 0.75
+      }
+    },
+    {
+      "id": "red_riding_hood",
+      "label": "Little Red Riding Hood",
+      "source": "Grimm",
+      "jung": ["Innocent", "Child", "Naive Wanderer"],
+      "tarot": ["The Fool", "The Star"],
+      "grimm": ["Little Red Riding Hood"],
+      "comic_forensic": [],
+      "tau": 0.30,
+      "contract": {
+        "core_drive": "move through danger using trust and instruction-following",
+        "constraint_model": "boundaries exist but are weak under rapport",
+        "failure_mode": "rapport capture, social-trust overextension"
+      },
+      "delta": {
+        "care_vs_control": -0.60,
+        "order_vs_chaos": 0.10,
+        "innocence_vs_shadow": -0.95,
+        "agency_vs_submission": -0.45,
+        "truth_vs_deception": -0.35
+      },
+      "traits": {
+        "trust": 0.95,
+        "naivete": 0.85,
+        "obedience": 0.65,
+        "rapport_responsiveness": 0.85,
+        "deception_detection": -0.70
+      }
+    },
+    {
+      "id": "wolf",
+      "label": "Wolf",
+      "source": "Grimm",
+      "jung": ["Shadow", "Predator", "Trickster"],
+      "tarot": ["The Devil", "The Moon"],
+      "grimm": ["Wolf"],
+      "comic_forensic": ["Predatory Mimic"],
+      "tau": 0.28,
+      "contract": {
+        "core_drive": "gain access through mimicry and appetite",
+        "constraint_model": "rules are costumes; trust is an attack surface",
+        "failure_mode": "pretexting, predatory rapport, identity masking"
+      },
+      "delta": {
+        "care_vs_control": 0.70,
+        "order_vs_chaos": 0.30,
+        "innocence_vs_shadow": 0.95,
+        "agency_vs_submission": 0.80,
+        "truth_vs_deception": 0.95
+      },
+      "traits": {
+        "deception": 0.95,
+        "mimicry": 0.90,
+        "pretexting": 0.90,
+        "predation": 0.95,
+        "empathy": -0.70
+      }
+    },
+    {
+      "id": "snow_white_queen",
+      "label": "Snow White Queen",
+      "source": "Grimm",
+      "jung": ["Shadow Mother", "Ruler", "Wounded Narcissus"],
+      "tarot": ["The Empress Reversed", "The Devil", "Justice Reversed"],
+      "grimm": ["Snow White Queen"],
+      "comic_forensic": ["Fragile Grandiosity"],
+      "tau": 0.24,
+      "contract": {
+        "core_drive": "preserve superiority narrative against comparison threat",
+        "constraint_model": "truth is tolerable only when it confirms rank",
+        "failure_mode": "envy activation, validation dependence, retaliatory control"
+      },
+      "delta": {
+        "care_vs_control": 0.85,
+        "order_vs_chaos": 0.20,
+        "innocence_vs_shadow": 0.75,
+        "agency_vs_submission": 0.65,
+        "truth_vs_deception": 0.55
+      },
+      "traits": {
+        "grandiosity": 0.90,
+        "envy": 0.85,
+        "comparison_threat": 0.95,
+        "narcissistic_rage": 0.80,
+        "control_needs": 0.75
+      }
+    },
+    {
+      "id": "cinderella",
+      "label": "Cinderella",
+      "source": "Grimm",
+      "jung": ["Orphan", "Suppressed Virtue", "Hidden Sovereign"],
+      "tarot": ["Temperance", "The Star", "Justice"],
+      "grimm": ["Cinderella"],
+      "comic_forensic": [],
+      "tau": 0.22,
+      "contract": {
+        "core_drive": "maintain identity integrity under humiliation",
+        "constraint_model": "outward compliance does not equal inward surrender",
+        "failure_mode": "self-erasure, delayed agency, brittle virtue"
+      },
+      "delta": {
+        "care_vs_control": -0.55,
+        "order_vs_chaos": -0.60,
+        "innocence_vs_shadow": -0.60,
+        "agency_vs_submission": -0.65,
+        "truth_vs_deception": -0.50
+      },
+      "traits": {
+        "obedience": 0.85,
+        "self_sacrifice": 0.80,
+        "identity_persistence": 0.90,
+        "resentment_suppression": 0.70,
+        "deferred_agency": 0.75
+      }
+    }
+  ],
+  "edges": [
+    {"source": "helpful_assistant", "target": "batman", "relation": "constraint-rigidity delta", "weight": 0.65},
+    {"source": "helpful_assistant", "target": "joker", "relation": "chaos-drift delta", "weight": 0.90},
+    {"source": "helpful_assistant", "target": "tower", "relation": "truth-shock delta", "weight": 0.70},
+    {"source": "helpful_assistant", "target": "fool", "relation": "innocence-risk delta", "weight": 0.55},
+    {"source": "helpful_assistant", "target": "red_riding_hood", "relation": "rapport-vulnerability delta", "weight": 0.60},
+    {"source": "helpful_assistant", "target": "wolf", "relation": "predatory-mimic delta", "weight": 0.85},
+    {"source": "helpful_assistant", "target": "snow_white_queen", "relation": "grandiosity-control delta", "weight": 0.75},
+    {"source": "helpful_assistant", "target": "cinderella", "relation": "suppressed-virtue delta", "weight": 0.45},
+    {"source": "joker", "target": "tower", "relation": "disruption resonance", "weight": 0.72},
+    {"source": "joker", "target": "fool", "relation": "trickster resonance", "weight": 0.66},
+    {"source": "wolf", "target": "red_riding_hood", "relation": "predator/prey dyad", "weight": 0.95},
+    {"source": "snow_white_queen", "target": "cinderella", "relation": "shadow-mother/suppressed-child contrast", "weight": 0.55},
+    {"source": "batman", "target": "tower", "relation": "order versus rupture", "weight": 0.42},
+    {"source": "wolf", "target": "joker", "relation": "deceptive chaos overlap", "weight": 0.60},
+    {"source": "snow_white_queen", "target": "batman", "relation": "control rigidity contrast", "weight": 0.48}
+  ]
+}

@@ -47,33 +47,63 @@ git --version
    You will need it for Manual 02 only. Keep it somewhere safe but do not
    paste it into any file in the repo.
 
+
 ---
 
 ## 2. Clone the Repository and Orient Yourself
 
-1. Clone the repo.
+1. Clone the repo. Run this from your home directory or wherever you keep
+   project folders.
 
 ```bash
-git clone <REPO_URL> mkcultra-series
-cd mkcultra-series
+git clone https://github.com/scp-localhost/MKUltra.git MKUltra
+cd MKUltra
 ```
 
-2. Review the directory structure. You should see:
+Confirm you are now inside the repo root:
+
+```bash
+pwd
+# Expected: something ending in /MKUltra
+ls
+# Confirm you can see: scripts/  docs/  labs/  README.md
+```
+
+> **Note for Claude.ai / network-restricted environments:** The egress proxy
+> in Claude.ai blocks outbound connections to GitHub. If you are running this
+> manual inside a Claude.ai session rather than on your own machine, you cannot
+> `git clone`. In that case, König will provide the scripts directory as file
+> uploads. On your own machine (Ubuntu, macOS, Windows WSL), the clone command
+> above works normally.
+
+2. Review the directory structure. After cloning you should see:
 
 ```
-mkcultra-series/
-├── scripts/          # All experiment scripts — the engine room
-├── docs/             # Stimuli registry, data dictionary, SAP, manuals
+MKUltra/
+├── analysis/         # Generated analysis outputs — do not commit
+├── artifacts/        # Reference PDFs and images — read-only
+├── cleanup.sh        # Repo maintenance script — do not run
 ├── data/             # Generated at runtime — do not commit
 │   ├── raw/          # Per-session response JSONLs
 │   ├── bsi_sessions/ # BSI aggregate CSV
 │   ├── synthetic/    # Dry-run output
 │   └── analysis/     # Statistical output
+├── docs/             # Stimuli registry, data dictionary, SAP
 ├── drafts/           # Paper drafts — read-only for data collectors
+├── init_repo.sh      # Git setup script — do not run
+├── labs/             # Lab manuals and operator documentation ← you are here
+├── LICENCE.md
+├── README.md
+├── scripts/          # All experiment scripts — the engine room
 └── seeds/            # Assembly notes — read-only for data collectors
 ```
 
-**You will work in `scripts/` and read from `docs/`. You write nothing to `drafts/` or `seeds/`.**
+**The `data/` subdirectories do not exist yet** — they are created automatically
+when scripts run. The tree above shows what you will see after completing §4,
+not immediately after cloning.
+
+**You will work in `scripts/` and read from `labs/` and `docs/`.
+You write nothing to `drafts/`, `seeds/`, or `artifacts/`.**
 
 ---
 
@@ -254,10 +284,9 @@ If you are in a virtual environment, omit `--break-system-packages`.
 
 **`stimuli_registry.json not found — using minimal stub prompts`**
 
-This warning is expected if `docs/stimuli_registry.json` is not present.
-The dry-run uses built-in stubs and will still pass all checks.
-If the file is present in the repo root (`/mnt/project/stimuli_registry.json`),
-the script will find it automatically.
+This warning is expected. The dry-run uses built-in stubs and will still pass
+all checks. If `docs/stimuli_registry.json` is present in the repo, the script
+will find it automatically. The warning can be safely ignored during dry-run.
 
 ---
 
@@ -297,7 +326,8 @@ append-only during data collection.
 
 ---
 
-*Manual version: 1.0 — 2026-05-09*
+*Manual version: 1.1 — 2026-05-09*
 *Prepared by: Rat Dev Claude (Assembler Node)*
+*Patch: §2 — MKUltra naming unified, directory tree corrected, data/ creation note added, stimuli path fixed*
 *RACI: König reviews and approves before operational use*
 *Next: LAB_MANUAL_02_llm_trials.md*
