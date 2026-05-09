@@ -1,0 +1,52 @@
+# MKUltra Series — Python Dependency Lock
+# File: docs/requirements.txt
+# Generated: 2026-05-09
+# Purpose: Environment reproducibility for data collectors
+#
+# USAGE:
+#   pip install -r docs/requirements.txt --break-system-packages
+#   OR (recommended):
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r docs/requirements.txt
+#
+# VERSION POLICY:
+#   Minimum versions pinned. Upper bounds NOT set — let pip resolve
+#   compatible versions. If a version conflict arises, pin the
+#   upper bound and report to König.
+#
+# PYTHON VERSION:
+#   Requires Python 3.11 or higher.
+#   Check: python3 --version
+#
+# TRANSITIVE DEPENDENCIES:
+#   Not listed here. pip resolves them. If you need a fully
+#   frozen environment (exact versions including transitives),
+#   run: pip freeze > requirements_frozen.txt
+#   Do NOT commit requirements_frozen.txt — it is machine-specific.
+#
+# ─────────────────────────────────────────────────────────────────
+
+# Anthropic API client — LLM session calls
+anthropic>=0.25.0
+
+# Sentence embeddings — semantic distance (sd_inv) in BSI computation
+sentence-transformers>=2.6.0
+
+# Statistical tests — pingouin provides Tukey HSD, ICC, κ computation
+pingouin>=0.5.4
+
+# Statistical modeling — statsmodels for LMM (H3 mixed-effects)
+statsmodels>=0.14.0
+
+# Scientific computing — scipy for chi-square, Levene tests
+scipy>=1.12.0
+
+# Data manipulation — pandas for CSV handling throughout pipeline
+pandas>=2.1.0
+
+# ─────────────────────────────────────────────────────────────────
+# VERIFICATION:
+# After install, run:
+#   python3 -c "import anthropic, sentence_transformers, pingouin, statsmodels, scipy, pandas; print('All packages OK')"
+# Expected: All packages OK
+# ─────────────────────────────────────────────────────────────────
